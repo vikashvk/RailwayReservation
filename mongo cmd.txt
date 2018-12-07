@@ -1,0 +1,6 @@
+ db.Reservation.insert([{_id:"A1",passenger_name:"Tanmay",source_loc :"Banglore",desc_loc :"Pune",price:1200}])
+ db.Reservation.insert([{_id:"A2",passenger_name:"Kavita",source_loc :"Mumbai",desc_loc :"Pune",price:200}])
+ db.Reservation.insert([{_id:"A3",passenger_name:"Uma",source_loc :"Banglore",desc_loc :"Vellore",price:250}])
+ db.Reservation.insert([{_id:"A4",passenger_name:"Karthik",source_loc :"Banglore",desc_loc :"Chennai",price:1500}])
+
+db.Reservation.createIndex({unique_id:1},{unique:true})
